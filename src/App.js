@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./design.css";
+import React from "react";
+import iniciar from "./iniciar.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="titulo perguntas">PERGUNTAS</h1>
+      <h1 className="titulo e">&</h1>
+      <h1 className="titulo respostas">RESPOSTAS</h1>
+      <button className="btn first" onClick={() => iniciar()}>
+        Iniciar jogo
+      </button>
     </div>
   );
 }
-
-export default App;
